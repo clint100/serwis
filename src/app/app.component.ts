@@ -14,7 +14,7 @@ export class AppComponent {
 
   constructor(private serwis: ZawodnikService) {
 
-    this.zawodnik = this.serwis.getZawodnik();
+    this.zawodnik = this.serwis.getZawodnik('b');
   }
 
 
