@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Zawodnik} from './classes/zawodnik';
+import {ZawodnikService} from '../services/zawodnik.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ser';
+
+  zawodnik: Zawodnik;
+
+  constructor(private serwis: ZawodnikService) {
+
+    this.zawodnik = this.serwis.getZawodnik();
+  }
+
+
 }
