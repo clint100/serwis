@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {ZawodnikService} from '../services/zawodnik.service';
+import { ZawodnikComponent } from './components/zawodnik/zawodnik.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ZawodnikComponent
   ],
   imports: [
     BrowserModule
